@@ -17,7 +17,7 @@ export default {
   },
 
   created() {
-    // 调用获取访问次数方法
+    // 调用接口
     this.comeCounts();
   },
 
@@ -26,9 +26,8 @@ export default {
   },
   
   methods: {
-    // 获取访问次数
+    // 调用接口
     comeCounts() {
-      // 调用获取访问次数接口
       getComeCounts().then(res => {
         // 打印结果
         console.log('HelloWorld: ' + res);
