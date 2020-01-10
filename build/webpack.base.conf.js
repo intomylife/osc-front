@@ -7,11 +7,9 @@ const webpack = require('webpack')
 // 引入 webpack.env.conf 模块
 const envConfig = require('./webpack.env.conf')
 
-function resolve (dir) {
+function resolve(dir) {
   return path.join(__dirname, '..', dir)
 }
-
-
 
 module.exports = {
   context: path.resolve(__dirname, '../'),

@@ -11,13 +11,13 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/api' : {
+      '/api': {
         // target: 'https://xxx.com',
         target: 'http://127.0.0.1:8000',
         changeOrigin: true,
         pathRewrite: {
-            '^/api': ''  // api 开头的接口都使用此代理，如果添加了此行代码，那么意思就是在接口中去掉 api
-        },
+          '^/api': '' // api 开头的接口都使用此代理，如果添加了此行代码，那么意思就是在接口中去掉 api
+        }
       }
     },
 
@@ -29,7 +29,6 @@ module.exports = {
     notifyOnErrors: true,
     poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
 
-    
     /**
      * Source Maps
      */

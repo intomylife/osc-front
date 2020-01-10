@@ -13,7 +13,7 @@ import { getComeCounts } from '@/api/base'
 
 export default {
   name: 'HelloWorld',
-  data () {
+  data() {
     return {
       msg: '',
       env: process.env.NODE_ENV
@@ -22,30 +22,29 @@ export default {
 
   created() {
     // 调用接口
-    this.comeCounts();
+    this.comeCounts()
   },
 
-  mounted() {
+  mounted() {},
 
-  },
-  
   methods: {
     // 调用接口
     comeCounts() {
       getComeCounts().then(res => {
         // 打印结果
-        console.log('HelloWorld: ' + res);
+        console.log('HelloWorld: ' + res)
         // 设值
-        this.msg = res.data;
-      });
+        this.msg = res.data
+      })
     }
-  },
+  }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
+h1,
+h2 {
   font-weight: normal;
 }
 ul {
