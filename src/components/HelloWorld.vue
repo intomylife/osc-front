@@ -4,6 +4,9 @@
     <h1>{{ msg }}</h1>
     <!-- 打印环境 -->
     <h2>{{ env }}</h2>
+    <!-- 矢量图 -->
+    <svg-icon icon-class="gouwuche" />
+    <svg-icon icon-class="wuliuche" />
   </div>
 </template>
 

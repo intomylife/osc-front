@@ -1,6 +1,6 @@
 {
   "name": "osc-front",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "A Vue.js project",
   "author": "邹文聪 <intomylife@foxmail.com>",
   "private": true,
@@ -49,6 +49,7 @@
     "rimraf": "^2.6.0",
     "semver": "^5.3.0",
     "shelljs": "^0.7.6",
+    "svg-sprite-loader": "^4.1.6",
     "uglifyjs-webpack-plugin": "^1.1.1",
     "url-loader": "^0.5.8",
     "vue-loader": "^13.3.0",
