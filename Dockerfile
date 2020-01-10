@@ -26,4 +26,4 @@ COPY . /app
 ##CMD [ "http-server","-p","9527", "dist" ]
 
 # 容器启动后执行的命令
-CMD [ "npm", "run", "build" ]
+##CMD [ "npm", "run", "build" ]

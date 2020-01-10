@@ -1,13 +1,16 @@
 {
   "name": "osc-front",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A Vue.js project",
   "author": "邹文聪 <intomylife@foxmail.com>",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "start": "npm run dev",
-    "build": "node build/build.js"
+    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js --env dev",
+    "stg": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js --env stg",
+    "prod": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js --env prod",
+    "build:dev": "node build/build.js --env dev",
+    "build:stg": "node build/build.js --env stg",
+    "build:prod": "node build/build.js --env prod"
   },
   "dependencies": {
     "axios": "^0.19.0",
@@ -49,7 +52,8 @@
     "webpack": "^3.6.0",
     "webpack-bundle-analyzer": "^2.9.0",
     "webpack-dev-server": "^2.9.1",
-    "webpack-merge": "^4.1.0"
+    "webpack-merge": "^4.1.0",
+    "yargs": "^15.1.0"
   },
   "engines": {
     "node": ">= 6.0.0",

@@ -1,6 +1,9 @@
 <template>
   <div class="hello">
+    <!-- 调用接口 -->
     <h1>{{ msg }}</h1>
+    <!-- 打印环境 -->
+    <h2>{{ env }}</h2>
   </div>
 </template>
 
@@ -12,7 +15,8 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: ''
+      msg: '',
+      env: process.env.NODE_ENV
     }
   },
 
